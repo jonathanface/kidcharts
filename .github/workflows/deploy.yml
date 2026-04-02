@@ -96,7 +96,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: .aws/task.json
-          container-name: kidcharts
+          container-name: kidsheets
           image: ${{ env.IMAGE }}
 
       - name: Deploy to ECS
